@@ -115,6 +115,7 @@ img {
         background-image: url(img/side.png);
         background-size: cover;
         /*opacity: 0.7;*/
+        margin: 0;
     }
 
     .side.left {
