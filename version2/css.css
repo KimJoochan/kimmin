@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: 0;
+}
+
+@media all and (min-width:1220px) {
+
+    /*중앙 정렬*/
+    .wrap {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        height: 680px;
+        float: left;
+    }
+
+    /*메뉴바*/
+    nav {
+        width: 100%;
+        height: 80px;
+        float: left;
+    }
+
+    #nav {
+        width: 900px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    #nav > li {
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+
+    #nav > li > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 80px;
+        font-size: 20px;
+    }
+
+    #logo > img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    /*배너영역*/
+    #mask {
+        width: 100%;
+        height: 600px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    #ban {
+        width: 300%;
+        height: 100%;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #ban > li {
+        width: 33.3%;
+        height: 100%;
+        float: left;
+    }
+
+    #ban > li > img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    /*배너영역의 사이드*/
+    #btn {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 9;
+    }
+
+    .side {
+        width: 233px;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        background-image: url(img/side.png);
+        background-size: cover;
+        /*opacity: 0.7;*/
+    }
+
+    .side.left {
+        left: 0;
+    }
+
+    .side.right {
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    /*로그인*/
+    #login {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        top: 20px;
+        left: 45%;
+        transform: translateX(-50%);
+        background-color: #ccc;
+    }
+
+    #tool {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    #tool > li {
+        width: 100%;
+        height: 33.3%;
+        float: left;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    #start {
+        width: 100%;
+        height: 100%;
+        float: left;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #down {
+        width: 100%;
+        height: 100%;
+        float: left;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #tool > li:last-child {
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .btn_side {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background-color: skyblue;
+        cursor: pointer;
+    }
+
+    .btn_side.rig {
+        transform: rotate(180deg);
+    }
+
+    /*배너의 광고버튼*/
+    #banAdv {
+        width: 600px;
+        height: 50px;
+        position: absolute;
+        bottom: 20px;
+        z-index: 9;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+    }
+
+    #btnAdv {
+        width: 50px;
+        height: 50px;
+        float: left;
+        cursor: pointer;
+    }
+
+    #imgAdv {
+        width: 545px;
+        height: 100%;
+        float: left;
+    }
+
+    #btnAdv > * {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #banAdvMask {
+        width: 550px;
+        height: 50px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #banAdvWrap {
+        width: 550px;
+        height: 100%;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: -600px;
+    }
+
+    #banAdvWrap > li {
+        width: 33.3%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        line-height: 50px;
+        color: #efefef;
+        font-weight: 666;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*소식 및 소통*/
+    #notice {
+        width: 100%;
+        height: 500px;
+        float: left;
+    }
+
+    #half {
+        width: 100%;
+        height: 500px;
+        float: left;
+    }
+
+    #half > li {
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .not {
+        width: 100%;
+        height: 90px;
+        float: left;
+        line-height: 90px;
+    }
+
+    .title {
+        float: left;
+    }
+
+    .not_nav,
+    .com_nav {
+        float: right;
+    }
+
+    .not_nav > li,
+    .com_nav > li {
+        float: left;
+    }
+
+    .not_nav > li:nth-child(2n),
+    .com_nav > li:nth-child(2n) {
+        margin: 0 5px;
+    }
+
+    .not_nav > li > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    a.active {
+        font-weight: 600;
+        color: palevioletred;
+    }
+
+    /*허쉬월드 소식,소통의 차트*/
+    .chart {
+        width: 100%;
+        height: 310px;
+        float: left;
+        border: 1px solid #333;
+        box-sizing: border-box;
+    }
+
+    /*퀵메뉴*/
+    #quick {
+        width: 100%;
+        height: 60px;
+        float: left;
+    }
+
+    #quick > li {
+        width: 33.3%;
+        height: 100%;
+        float: left;
+    }
+
+    #quick > img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    /*스크린샷*/
+    #scr {
+        width: 100%;
+        height: 480px;
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .srcTitle {
+        text-align: center;
+    }
+
+    #scrWrap {
+        width: 100%;
+        height: 360px;
+        float: left;
+        margin-top: 55px;
+    }
+
+    #scrWrap > li {
+        width: 265px;
+        height: 100%;
+        float: left;
+        margin-right: 40px;
+        background-color: #efefef;
+    }
+
+    #scrWrap > li:last-child {
+        margin: 0;
+    }
+
+    /*스크린샷의 상세칸*/
+    .topImg {
+        width: 100%;
+        height: 240px;
+        float: left;
+    }
+
+    .topImg > img {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    .setence {
+        width: 100%;
+        height: 120px;
+        float: left;
+        padding: 10px;
+    }
+
+    .senTitle {
+        width: 100%;
+        font-size: 16px;
+        float: left;
+        margin: 0;
+    }
+
+    .senDoc {
+        width: 100%;
+        height: 60px;
+        float: left;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .info {
+        width: 240px;
+        height: 20px;
+        float: left;
+    }
+
+    .info > li {
+        width: auto;
+        height: 20px;
+        font-size: 12px;
+        float: left;
+
+    }
+
+    .info > li.date {
+        float: right;
+    }
+
+    /*풋터*/
+    footer {
+        width: 100%;
+        height: 240px;
+        float: left;
+    }
+
+    .footTitle {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    #fotNav {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #fotNav > li {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        float: left;
+    }
+
+    #fotNav > li:nth-child(2n) {
+        margin: 0 10px;
+    }
+
+    #conCount {
+        width: 560px;
+        height: 125px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    address {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    #pcdisplay {
+        display: block;
+    }
+
+    #mbdisplay {
+        display: none;
+    }
+}
+
+@media all and (max-width:1210px) {
+    #pcdisplay {
+        display: none;
+    }
+
+    #mbdisplay {
+        display: block;
+    }
+    /*모바일 메인사진*/
+    #mbBan {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #mbBan > img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    /*배너의 버튼들*/
+    #mbbtn {
+        width: 70%;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .mbBut {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    /*소식*/
+    #mbNews,
+    #mbChat,
+    #mbScr {
+        width: 100%;
+        height: 400px;
+        float: left;
+        border: 1px solid #eee;
+        box-sizing: border-box;
+    }
+    /*나머지 섹션의 타이틀*/
+    .mbTitle {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+
+    /*모바일 소식*/
+    #mbChart,
+    #mbGrd,
+    #mbSwipe {
+        width: 80%;
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    #mbList{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding-left: 10%;
+        box-sizing: border-box;
+        float: left;
+    }
+    #mbList>li{
+        width: 1005;
+        height: 30px;
+        line-height: 30px;
+        list-style: circle;
+        position: relative;
+    }
+    #mbList>li::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: -15px;
+        top: 100%;
+        background-color: gray;
+    }
+    #mbList>li:nth-child(2n){
+        color: #333;
+    }
+    #mbList>li:nth-child(2n)::after{
+        background-color: skyblue;
+    }
+    /*모바일 캐릭터*/
+    #mbChater {
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+    }
+
+    #mbChater > li {
+        width: 25%;
+        height: 15vw;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        float: left;
+        overflow: hidden;
+        border-bottom: none;
+    }
+    #mbChater>li>img{
+        width: 100%;
+        height: auto;
+        float: left;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
+    #mbChater>li>img:hover{
+        background-color: aquamarine;
+    }
+    /*모바일 풋터*/
+    #mbFooter {
+        width: 100%;
+        height: 200px;
+        float: left;
+        background-color: #272b31;
+    }
+
+    /*스크린샷*/
+    .swiper-container {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mbScreen{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    .mbScrTop{
+        width: 100%;
+        height: 80%;
+        float: left;
+        box-sizing: border-box;
+    }
+    .mbScrTop>img{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    .mbScrBot{
+        width: 100%;
+        height: 20%;
+        border: 1px solid #444;
+        border-top: 0;
+        float: left;
+        box-sizing: border-box;
+    }
+    /*모바일메뉴*/
+    #mbMenu{
+        width: 100%;
+        height: 50%;
+        position: fixed;
+        left: 0;
+        top: 40px;
+        z-index: 99;
+    }
+    #mbFootNav{
+        width: 500px;
+        height:30px;
+        float: left;
+        margin-left: 20vw;
+        margin-top: 30px;
+    }
+    #mbFootNav>li{
+        float: left;
+        color: #efefef;
+    }
+    #mbFootNav>li:nth-child(2n){
+        margin: 0 10px;
+    }
+    /*모바일 footer 아이콘*/
+    #mbFootIcon{
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-left: 20vw;
+    }
+    #mbFootIcon>li{
+        float: left;
+    }
+    .mbIconBtn{
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border: none;
+    }
+}

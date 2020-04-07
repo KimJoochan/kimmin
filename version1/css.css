@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+/*중앙 정렬*/
+.wrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+nav {
+    width: 100%;
+    height: 45px;
+    float: left;
+    background-color: rgba(25, 17, 14, 0.5);
+    position: fixed;
+    z-index: 999;
+}
+
+#logo {
+    width: 115px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+#logo > img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#nav {
+    width: 500px;
+    height: 45px;
+    float: right
+}
+
+#nav > li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+}
+
+#nav > li > a {
+    color: #efefef;
+}
+
+#mask {
+    width: 100%;
+    height: 600px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+#ban {
+    width: 300%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ban > li {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+/*헤더 아래의 광고*/
+#adv {
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#adv > li {
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+
+#adv > li > img {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+/*로그인 버튼*/
+article {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#button {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    line-height: 180px;
+    background-color: #fe9b00;
+}
+
+#login {
+    width: 100%;
+    height: 220px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#logText {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.logSub {
+    text-align: center;
+    font-size: 8px;
+    margin: 5px 0;
+}
+
+#loginBtn {
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    background-color: #fe9b00;
+    border: 0;
+    font-size: 16px;
+    color: #efefef;
+}
+
+/*공지사항*/
+#board {
+    width: 100%;
+    height: 300px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#board > li {
+    width: 390px;
+    height: 100%;
+    float: left;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+#board > li:last-child {
+    margin: 0;
+}
+
+.boardBox {
+    width: 100%;
+    height: 230px;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.boardBox > a {
+    width: 50%;
+    height: 50px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+}
+
+.box {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.subText {
+    width: 100%;
+}
+
+.subText > li {
+    width: 100%;
+    height: 20px;
+}
+
+.time,
+.count {
+    float: right;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.link,
+.nickName {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/*허쉬월드 퀵메뉴*/
+#quick > li {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden;
+}
+
+#quick > li > img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#quick > li:last-child {
+    margin: 0;
+}
+
+/*허쉬월드 스크린샷*/
+#screenShot {
+    width: 100%;
+    height: 470px;
+    float: left;
+    background: url(img/ban2.png); 
+}
+
+#screen {
+    width: 100%;
+    height: 470px;
+    float: left;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+#screen>h2{
+    color: #efefef;
+}
+#screenImg {
+    width: 100%;
+    height: 365px;
+    float: left;
+    margin-top: 20px;
+}
+
+#screenImg > li {
+    width: 250px;
+    height: 100%;
+    margin-right: 20px;
+    float: left;
+    background-color: white;
+}
+
+.topImg {
+    width: 100%;
+    height: 200px;
+    float: left;
+    background: url(img/scr1.png);
+    background-size: cover;
+        
+}
+
+.botText {
+    width: 100%;
+    height: 165px;
+    float: left;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.screenSub {
+    font-size: 12px;
+}
+
+.bottomText {
+    width: 240px;
+    position: absolute;
+    bottom: 5px;
+}
+
+/*풋터*/
+footer {
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-color: #202020;
+}
+footer>*{
+    color: #ddd;
+}
+#subNav>li>a{
+    font-size: 13px;
+    color: #ddd;
+}
+
+#footer {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#footLay {
+    width: 100%;
+    height: 90%;
+    float: left;
+}
+
+#footLay > li {
+    width: 30%;
+    margin-right: 5%;
+    height: 100%;
+    float: left;
+}
+
+#footLay > li:last-child {
+    margin: 0;
+}
+
+#subNot {
+    margin-top: 20px;
+}
+
+#subNot > li {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#subNot > li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: beige;
+
+}
+
+.sub_left {
+    float: left;
+}
+#count {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    float: left;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+#count > li {
+    height: 10px;
+    line-height: 10px;
+    margin-bottom: 10px;
+    list-style: circle;
+}
+
+address {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-style: normal;
+    float: left;
+    position: relative;
+}
+
+address::before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+/*공지사항 클릭시 색변화*/
+.active{
+    background-color: gainsboro;
+}
